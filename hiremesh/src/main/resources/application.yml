@@ -1,8 +1,0 @@
-
-spring:
-  devtools:
-    restart:
-      enabled: true
-  thymeleaf:
-    cache: false
-    prefix: file:src/main/resources/templates/
