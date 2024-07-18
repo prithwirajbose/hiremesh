@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>HireMesh</title>
-</head>
-<body>
-<div id="wrap">
-    Welcome to HireMesh
-
-</div>
-
-</body>
+<html lang="en">
+    <head>
+        <div th:replace="fragments.html :: header"></div>
+        <title>HireMesh</title>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav th:replace="fragments.html :: navbar"></nav>
+        <!-- Page content-->
+        <div class="container">
+            <div class="text-center mt-5">
+                <h1>A Bootstrap 5 Starter Template</h1>
+                <p class="lead">A complete project boilerplate built with Bootstrap</p>
+                <p>Bootstrap v5.2.3</p>
+            </div>
+        </div>
+        
+        <div th:replace="fragments.html :: footer"></div>
+		<div th:replace="fragments.html :: footerjs"></div>
+    </body>
 </html>
