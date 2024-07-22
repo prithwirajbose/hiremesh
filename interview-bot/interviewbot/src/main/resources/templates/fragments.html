@@ -1,0 +1,90 @@
+<html>
+
+<body>
+	<div th:fragment="header" th:remove="tag">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="Prithwiraj Bose <sribasu@gmail.com>">
+		<meta name="generator" content="Prithwiraj Bose">
+		<meta name="theme-color" content="#7952b3">
+		<title>Interview Bot</title>
+		<link rel="canonical" href="http://localhost:8080/">
+		<!-- Bootstrap core CSS -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="apple-touch-icon"
+			href="/images/apple-touch-icon.png"
+			sizes="180x180">
+		<link rel="icon"
+			href="/images/favicon-32x32.png"
+			sizes="32x32" type="image/png">
+		<link rel="icon"
+			href="/images/favicon-16x16.png"
+			sizes="16x16" type="image/png">
+		<link rel="manifest"
+			href="/images/site.webmanifest">
+		<link rel="icon"
+			href="/images/favicon.ico">
+		<!-- Custom styles for this template -->
+		<link href="/css/style.css" rel="stylesheet">
+	</div>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4"
+		th:fragment="navbar">
+		<div class="container-fluid">
+			<a class="navbar-brand"
+				href="https://getbootstrap.com/docs/5.0/examples/navbar-static/#"><img src="/images/android-chrome-192x192.png" style="width:30px; height:auto; padding:0px; margin:0px;" alt="Interview Bot" title="Interview Bot" /></a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav me-auto mb-2 mb-md-0">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page"
+						href="/">Home</a>
+					</li>
+					<li class="nav-item"><a class="nav-link"
+						href="/app/start-interview">Interview</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div th:fragment="footer" id="footer">
+		<div class="modal fade" id="popupModal" tabindex="-1" role="dialog"
+			aria-labelledby="popupModal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Information</h5>
+					</div>
+					<div class="modal-body">Are you sure?</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary popupCancelBtn"
+							data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary popupModalOk">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="loadingModal" tabindex="-1" role="dialog"
+			aria-labelledby="loadingModal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document"
+				style="width: 100px;">
+				<div class="modal-content" style="background: #000; border: none;">
+					<div class="modal-body">
+						<img src="/images/loading.gif" style="border: none; width: 100%;" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:fragment="footerjs" style="display: none;" id="footerjs">
+		<script src="/js/bootstrap.bundle.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+	</div>
+</body>
+</html>

@@ -2,17 +2,24 @@
     "name": "qna-bot",
     "version": "1.0.0",
     "description": "Question and Answer bot for HireMesh App",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Prithwiraj Bose <sribasu@gmail.com>",
     "license": "ISC",
     "dependencies": {
+        "body-parser": "^1.20.2",
+        "cors": "^2.8.5",
         "dotenv": "^16.4.5",
         "express": "^4.19.2",
+        "express-urlrewrite": "^2.0.2",
         "fs": "latest",
+        "fs-extra": "^11.2.0",
+        "lodash": "^4.17.21",
         "openai": "^4.52.7",
-        "path": "latest"
+        "path": "latest",
+        "request": "^2.88.2",
+        "serve-favicon": "^2.5.0"
     }
 }
