@@ -10,15 +10,20 @@
 	<main class="container">
 		<div class="bg-light p-5 rounded">
 			<h1>Navbar example</h1>
-			<p class="lead">This example is a quick exercise to illustrate
-				how the top-aligned navbar works. As you scroll, this navbar remains
-				in its original position and moves with the rest of the page.</p>
-			<a class="btn btn-lg btn-primary"
-				href="https://getbootstrap.com/docs/5.0/components/navbar/"
-				role="button">View navbar docs</a>
+			<audio id="audioplayer" autoplay>
+			  <source src="/api/audio" type="audio/mpeg">
+			</audio>
 		</div>
 	</main>
 	<div th:replace="fragments.html :: footer"></div>
 	<div th:replace="fragments.html :: footerjs"></div>
+	<script type="text/javascript">
+	$(document).ready(()=> {
+		$('.container').click();
+		setTimeout(()=> {
+		$('#audioplayer')[0].play();
+		},3000);
+	});
+	</script>
 </body>
 </html>
